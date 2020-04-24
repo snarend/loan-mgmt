@@ -19,6 +19,7 @@ public class LoanDataServiceImpl implements LoanDataService{
     }
 
     @Override
+    @Transactional
     public LoanData insertLoanData(LoanData loanData) {
         return loanDataRepository.save(loanData);
     }
